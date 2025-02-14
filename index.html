@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rohit Kanna - Web Developer Portfolio">
+    <title>Rohit Kanna - Web Developer</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #5FCB71;
+            --secondary-color: #4CAF50;
+            --text-color: #4f4f4f;
+            --card-bg: #fff;
+            --heading-color: #292929;
+        }
+        
+        [data-bs-theme="dark"] {
+            --primary-color: #66CB8C;
+            --secondary-color: #54A357;
+            --text-color: #ffffff;
+            --card-bg: #2a2a2a;
+            --heading-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background: #f7f8fa;
+        }
+        
+        .header {
+            background: var(--card-bg);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-image {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+        
+        .bio-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--heading-color);
+        }
+        
+        .bio-tagline {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+        
+        .section-title {
+            color: var(--heading-color);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .card {
+            border: none;
+            background: var(--card-bg);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .skill-tag {
+            background: rgba(95, 203, 113, 0.15);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.25rem;
+            font-size: 0.875rem;
+        }
+        
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .form-control {
+            padding: 0.75rem;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 0.75rem 2rem;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .social-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .social-list li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+        
+        .social-list a {
+            width: 40px;
+            height: 40px;
+            background: rgba(95, 203, 113, 0.15);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-list a:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-wrapper">
+            <!-- Header -->
+            <header class="header text-center">
+                <div class="force-overflow">
+                    <img class="profile-image mb-3" src="https://github.com/rohitkanna369.png" alt="Rohit Kanna">
+                    <div class="bio mb-3">
+                        <h1 class="bio-heading mb-2">Rohit Kanna</h1>
+                        <div class="bio-tagline mb-3">Web Developer</div>
+                    </div>
+                    <ul class="social-list">
+                        <li><a href="https://github.com/rohitkanna369" target="_blank"><i class="bi bi-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/rohit-kanna" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3"><i class="bi bi-download me-2"></i>Download CV</a>
+                </div>
+            </header>
+            
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content -->
+                    <div class="col-lg-8">
+                        <!-- About Section -->
+                        <section class="about-section py-5">
+                            <h2 class="section-title">About Me</h2>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>I'm a Web Developer with 1 year of experience in building responsive and user-friendly websites. I have a strong foundation in front-end development and am passionate about creating clean, efficient code.</p>
+                                    <div class="skills mt-4">
+                                        <h3 class="h5 mb-3">Tech Stack</h3>
+                                        <div class="frontend mb-3">
+                                            <span class="skill-tag">HTML5</span>
+                                            <span class="skill-tag">CSS3</span>
+                                            <span class="skill-tag">JavaScript</span>
+                                            <span class="skill-tag">Python</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- Featured Projects -->
+                        <section class="projects-section py-5">
+                            <h2 class="section-title">Featured Projects</h2>
+                            <div class="card project-card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Project">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3 class="card-title h5">Personal Portfolio Website</h3>
+                                            <p class="card-text">A responsive portfolio website built with HTML5, CSS3, and JavaScript.</p>
+                                            <div class="mb-3">
+                                                <span class="skill-tag">HTML5</span>
+                                                <span class="skill-tag">CSS3</span>
+                                                <span class="skill-tag">JavaScript</span>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-github me-2"></i>Code</a>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg me-2"></i>Live Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <!-- Contact Section -->
+                        <section class="contact-section py-5">
+                            <h2 class="section-title">Contact</h2>
+                            <div class="card">
+                                <div class="card-body">
+                                    <form id="contactForm">
+                                        <div class="mb-3">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-control" value="Rohit Kanna" readonly>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" value="727723euec164@skcet.ac.in" readonly>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Message</label>
+                                            <textarea class="form-control" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form submission logic here
+        });
+
+        // Theme toggle
+        const toggleTheme = () => {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-bs-theme', newTheme);
+        };
+    </script>
+</body>
+  </html>
